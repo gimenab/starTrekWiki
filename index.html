@@ -25,17 +25,19 @@
         <img  id="img-header" src="./img/Star_Trek_logo.png">
     </header>
     <div class="container">
-        <section>
-            <h2 class="title-section">"The Next Generation"</h2>
-            <p>Este sitio reune un información de la saga "Star Trek : The Next Generation ". Encontrarás datos sobre la serie, detalles de  los personajes y curiosidades 
-                una de las series de ciencia ficción mas querida de la historia del siglo XX. <br/>
-                En este artículo encontrarás información sobre los siguientes tópicos:</p>
-                    <ul class="items-list">
-                        <img id="ussenterprise" src="./img/logo-uss.png" alt="logo de la nave">
-                        <a href="#first-season"><li>The Next Generation: primera temporada</li></a>
-                        <a href="#characters"><li>La tripulación del EnterPrise</li></a>
-                    </ul>
-        </section>
+       <section id="main-info"> 
+        <h2 class="title-section">"The Next Generation"</h2>
+        <p>Este sitio reune un información de la saga "Star Trek : The Next Generation ". Encontrarás datos sobre la serie, detalles de  los personajes y curiosidades 
+            una de las series de ciencia ficción mas querida de la historia del siglo XX. <br/>
+            En este artículo encontrarás información sobre los siguientes tópicos:</p>
+                <ul id="items-list-info">
+                    <img id="ussenterprise" src="./img/logo-uss.png" alt="logo de la nave">
+                    <a href="#first-season"><li>The Next Generation: primera temporada</li></a>
+                    <a href="#characters"><li>La tripulación del EnterPrise</li></a>
+                </ul>
+            </section>
+           
+        
         <h2 class="title-section">Original y remasterizada</h2>
         <section id="first-season" class="content">
             
@@ -117,8 +119,6 @@
                 <td>Alferez, timonel</td>
             </tr>
         </table>
-        <!-- <a class="more-info" href="personajes.html" 
-            target="_blank"><p>Ver más personajes</p></a>     -->
         </section> 
         <form id="contact-form">
             <h2 class="title-section">Contactanos  :)</h2>
@@ -129,7 +129,7 @@
                 <label for="surname" id="surname-label">Apellido<input type="name" id="surname"  class="form-control" placeholder="Ingrése su apellido"required/></label>
             </div>
             <div class="form-group">
-            <label form="email" id="email">Email<input type="email" id="email"  class="form-control" placeholder="Ingrese su direccion de correo electrónico"required/></label>
+            <label form="email" id="emai-labell">Email<input type="email" id="email"  class="form-control" placeholder="Ingrese su direccion de correo electrónico"required/></label>
             </div>
             <div class="form-group">
                 <textarea type="text" id="comments" name="comment" placeholder="Escriba su mensaje aqui."></textarea>
@@ -139,7 +139,8 @@
         </form>   
     </div>
   
-    <footer>
-    </footer>
+    <footer id="footer">
+        <p id="text-footer"> © 2020 gbf</p>
+        
 </body>
 </html>
