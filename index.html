@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Quicksand:wght@500&family=Rambla:ital,wght@1,700&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Star Trek: The Next Generation</title>
+    
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personajes.html" target="_blank">Personajes</a></li>
+            <li><a href="produccion.html" target="_blank">Producción</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img  id="img-header" src="./img/Star_Trek_logo.png">
+    </header>
+    <div class="container">
+        <section>
+            <h2 class="title-section">"The Next Generation"</h2>
+            <p>Este sitio reune un información de la saga "Star Trek : The Next Generation ". Encontrarás datos sobre la serie, detalles de  los personajes y curiosidades 
+                una de las series de ciencia ficción mas querida de la historia del siglo XX. <br/>
+                En este artículo encontrarás información sobre los siguientes tópicos:</p>
+                    <ul class="items-list">
+                        <img id="ussenterprise" src="./img/logo-uss.png" alt="logo de la nave">
+                        <a href="#first-season"><li>The Next Generation: primera temporada</li></a>
+                        <a href="#characters"><li>La tripulación del EnterPrise</li></a>
+                    </ul>
+        </section>
+        <h2 class="title-section">Original y remasterizada</h2>
+        <section id="first-season" class="content">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ph0eXOV1D7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="description">
+                <p>Star Trek: The Next Generation(abreviada ST:TNG o TNG) es una serie de ciencia ficción estadounidense dentro del universo de Star Trek. 
+                    Situada en el siglo XXIV, un siglo después de Star Trek: la serie original, el programa cuenta con una nueva tripulación y una nueva nave Enterprise. 
+                    Su estreno fue el 28 de septiembre de 1987 (21 años después de la serie original), contando con más de 27 millones de televidentes el episodio piloto "Encuentro en Farpoint". 
+                    En el 2020, la plataforma de contenido más utilizada de la tierra: Netflix la incluye en su feed. La serie remasterizada
+                    continúa disponible para todos los fanáticos de la ciencia ficción</p>
+                    
+                        <a class="more-info" href="produccion.html" 
+                    target="_blank"><p>¿Quieres saber mas?</p></a>
+                    
+            </div>
+        </section>    
+        
+        <h2 class="title-section">Personajes principales</h2>
+        <section id="characters">
+            <table>
+                <tr>
+                    <th>Personaje</th>
+                    <th>Nombre Actor/Actriz</th>
+                    <th>Especie</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>Jean-Luc Picard</td>
+                    <td>Patrick Stewart</td>
+                    <td>Humano</td>
+                    <td>Capitán, oficial comendante</td>
+                </tr>
+                <tr>
+                    <td>William Riker</td>
+                    <td>Jonathan Frakes</td>
+                    <td>Humano</td>
+                    <td>Comandante; primer oficial</td>
+                </tr>
+                <tr>
+                    <td>Geordi La Forge</td>
+                    <td>Levar Burton</td>
+                    <td>humano</td>
+                    <td>Teniente, jefe de Ingenieria</td>
+                </tr>
+                <tr>
+                    <td>Worf</td>
+                    <td>Michael Dorn</td>
+                    <td>Klingon</td>
+                    <td>Teniente Junior, ofial táctico y timonel</td>
+                </tr>
+                <tr>
+                    <td>Beverly Crusher</td>
+                    <td>Gates McFadden</td>
+                    <td>Humana</td>
+                    <td>Comandante; oficial médico en jefe</td>
+            </tr>
+            <tr>
+                <td>Deanna Troi</td>
+                <td>Marina Sirtis</td>
+                <td>Betazoide/Humana</td>
+                <td>Teniente comandante; consejera de la nave</td>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Brent Spiner</td>
+                <td>Androide</td>
+                <td>Teniente comandante; segundo oficial y oficial de opraciones</td>
+            </tr>
+            <tr>
+                <td>Natasha "Tasha" Yar</td>
+                <td>Denise Crosby</td>
+                <td>Romulana/Humana</td>
+                <td>Teniente, jefe de seguridad y oficial táctico</td>
+            </tr>
+            <tr>
+                <td>Wesley Crusher</td>
+                <td>Wil Whaeton</td>
+                <td>humano</td>
+                <td>Alferez, timonel</td>
+            </tr>
+        </table>
+        <!-- <a class="more-info" href="personajes.html" 
+            target="_blank"><p>Ver más personajes</p></a>     -->
+        </section> 
+        <form id="contact-form">
+            <h2 class="title-section">Contactanos  :)</h2>
+            <div class="form-group">
+                <label for="name" id="name-label">Nombre<input type="name" id="name" class="form-control" placeholder="Ingrése su nombre"required/></label>
+            </div>
+            <div class="form-group">
+                <label for="surname" id="surname-label">Apellido<input type="name" id="surname"  class="form-control" placeholder="Ingrése su apellido"required/></label>
+            </div>
+            <div class="form-group">
+            <label form="email" id="email">Email<input type="email" id="email"  class="form-control" placeholder="Ingrese su direccion de correo electrónico"required/></label>
+            </div>
+            <div class="form-group">
+                <textarea type="text" id="comments" name="comment" placeholder="Escriba su mensaje aqui."></textarea>
+                
+                <button type="button" id="submit" class="btn btn-outline-success">Enviar</button>
+            </div>
+        </form>   
+    </div>
+  
+    <footer>
+    </footer>
+</body>
+</html>

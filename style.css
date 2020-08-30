@@ -1,0 +1,306 @@
+*{
+    
+    color: #222;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+body{
+  background-color: #fff;
+    padding: 2%;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+#img-header{
+  width: 45%;
+  padding-top: 15%;
+  padding-bottom: 3%;;
+
+}
+ #ussenterprise{
+  width: 25%;
+  float:left;
+  
+}
+
+
+
+/* ---HEADER---*/
+header{
+    
+    width: 100%;
+    display: inline-block;
+    text-align:center;
+    margin-top: 3rem;
+    background-image: url("http://tng.trekcore.com/hd/albums/1x22/symbiosis_hd_145.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    
+  }
+  #header-title{
+    width: 100%;
+    min-width: 300px;
+    color:#fff;
+    background-color: transparent;
+    bottom: 0;
+    display: block;
+   
+    
+
+  }
+    
+nav {
+  position: fixed;
+  display:inline-block;
+  width: 100%;
+  top: 0;
+  right:0;
+  background-color:#323a42;
+}
+ul{
+    list-style-type: none;
+    float: right;
+    color:#fff;
+}
+.items-list{
+  font-size: 18px;
+  float: left;
+  list-style-type: none;
+  width: 100%;
+  padding-bottom: 2%;
+}
+.items-list a{
+  text-decoration:none;
+  width: 50%;
+  display:inline-flex;
+  
+}
+.items-list img{
+
+ 
+  padding-right: 2%;
+  width: 20%;
+  height: auto;
+  
+}
+
+
+/* --- CONTENT ---*/
+.container{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  
+
+  
+
+
+
+}
+section{
+    padding: 2%;
+}
+img {
+    border-radius: 5px;
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+
+.full-img{
+  width: 100%;
+}
+h1{
+    font-size: 6rem;
+    text-align: center;
+    display: block;
+    color: #fff;
+    background-color:transparent;
+    padding-top: 2rem;
+    
+}
+
+  .title-section{
+    font-size: 2rem;
+    color: #3e7dc0;
+    font-weight: bold;
+    font-family: 'Rambla', sans-serif;
+    margin-top:1%;
+    /* display: block; */
+    width: 100%;
+}
+
+
+h3{
+  color: #fff;
+  background-color:transparent;
+  font-style: italic;
+  display: inline;
+}
+#menu{
+    display: inline-flex;
+    list-style-type: none;
+    text-decoration-style: none;  
+    color: #fff; 
+    background-color: transparent;
+}
+#menu li{
+    padding-right: 1rem;
+    float: right;
+    color: #fff; 
+    background-color: transparent;
+}
+#menu a{
+    text-decoration:none;
+    color: #fff; 
+    background-color: transparent;    
+    font-size: 14px;
+}
+ #info{
+  display: inline-block;
+  width: 100%;
+}
+
+#first-season{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.description{
+  width: 50%;
+  height: auto;
+  text-align: left;
+  padding:3%;
+}
+.content{
+  width: 100%;
+  height: auto;
+}
+.more-info p,.items-list
+li{
+  
+  text-align: center;
+  padding: 2%;
+  border-radius: 5px;
+  border-style:solid;
+  border-width:2px;  
+  
+  border-color:#3e7dc0;
+  list-style-type: none;
+  float: right;
+  
+  
+}
+.more-info p{
+  /* color: #3e7dc0; */
+  color:#3e7dc0;
+  border-color:#3e7dc0;
+
+}
+.more-info p:hover{
+  background-color:#3e7dc0;
+  color: #fff;
+}
+.items-list
+li{
+  text-align: left;
+  padding: 1%;
+  list-style-type: none;
+  border-width: 2px;
+  width: 100%;
+  border-color: transparent;
+  border-radius: 5px;
+border-style: solid;
+border-width: 2px;
+  
+}
+.items-list li:hover{
+
+  color: #3e7dc0;
+font-style: bolder;
+
+}
+form{
+  width: 100%;
+  height: auto;
+}
+.form-group{
+  width: 90%;
+  height: auto;
+}
+.more-info a{
+  text-align: center;
+  padding: 1%;
+ text-decoration: none;
+ margin-bottom: 1%;
+ width: 100%;
+}
+/*-- TABLE--*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color:#3e7dc0;
+    color: white;
+  }
+  td{
+    font-size: 14px;
+    /* font-weight: bolder; */
+    
+  }
+ 
+  
+  /* footer{
+    width: 100%;
+    min-height: 50px;
+    background-color: #3e7dc0;
+    display:block;
+    bottom: 0;
+    background-color:#3e7dc0;
+  } */
+
+  #contact-form{
+    width: 100%;
+    font-size: 16px;
+    padding: 3%;
+    background-color: #323a42;
+    color:#fff
+
+  }
+  .form-group{
+    width: 100%;
+    height: auto;
+    color:#fff;
+  }
+  label, textarea, #submit{
+    display: block ;
+    width:50%;
+    padding-bottom: 1%;;
+  
+  }
+  .form-control{
+    font-size: 12px;
+  }
+  textarea{
+    min-height: 150px;
+    
+  }
+  #comments{
+    margin-bottom: 2%;
+    padding: 2%;
+  
+  }
