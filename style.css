@@ -309,3 +309,14 @@ table {
     margin-top:2;
 
   }
+  #container-characters{
+    width: 90%;
+    padding: 3%;
+    display: block;
+  }
+  .row{
+    background-color:#f2f2f2;
+  }
+  .col-sm{
+    padding: 3%;
+  }
