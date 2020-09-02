@@ -5,20 +5,19 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Quicksand:wght@500&family=Rambla:ital,wght@1,700&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
     <title>Star Trek: The Next Generation</title>
     
 </head>
 <body>
     <nav>
+        <a href="index.html"><img src="img/logo-uss.png" id="ussenterprise" alt="imagen de la nave"></a>
         <ul id="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="personajes.html" target="_blank">Personajes</a></li>
-            <li><a href="produccion.html" target="_blank">Producción</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="produccion.html">Producción</a></li>
         </ul>
     </nav>
     <header>
@@ -26,35 +25,42 @@
         
     </header>
     <figcaption>Nave carguera, rescatada en el capítulo 22 "Simbiosis"</figcaption>
-    <div class="container">
+    <div class="container mt-4">
        <section  class="content-md" id="main-info"> 
         <h2 class="title-section">"The Next Generation"</h2>
         <p>Este sitio reune un información de la saga "Star Trek : The Next Generation ". Encontrarás datos sobre la serie, detalles de  los personajes y curiosidades 
             una de las series de ciencia ficción mas querida de la historia del siglo XX.<br/>
             En esta página encontrarás información sobre los siguientes tópicos:</p>
                 <ul class="items-list">
-                    <!-- <img id="ussenterprise" src="./img/logo-uss.png" alt="logo de la nave"> -->
+                   
                     <a href="#first-season"><li>The Next Generation: primera temporada</li></a>
                     <a href="#characters"><li>La tripulación del EnterPrise</li></a>
                 </ul>
             </section>
-           
+            
         
         <h2 class="title-section">Original y remasterizada</h2>
         <section id="first-season" class="content">
             <div class="content-md">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ph0eXOV1D7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                    <a href="https://www.youtube.com/channel/UCh5JE2ug05KUdkqqRxe-aJw" 
+                target="_blank">Ver mas videos</a>
+               
             </div>
             
-            <div class="description content-md">
+            <div class="description">
                 <p>Star Trek: The Next Generation(abreviada ST:TNG o TNG) es una serie de ciencia ficción estadounidense dentro del universo de Star Trek. 
                     Situada en el siglo XXIV, un siglo después de Star Trek: la serie original, el programa cuenta con una nueva tripulación y una nueva nave Enterprise. 
                     Su estreno fue el 28 de septiembre de 1987 (21 años después de la serie original), contando con más de 27 millones de televidentes el episodio piloto "Encuentro en Farpoint". 
                     En el 2020, la plataforma de contenido más utilizada de la tierra: Netflix la incluye en su feed. La serie remasterizada
                     continúa disponible para todos los fanáticos de la ciencia ficción</p>
                     
-                        <a class="more-info" href="produccion.html" 
-                    target="_blank"><p>¿Quieres saber mas?</p></a>
+                        <div class="more-info">
+                            <a href="https://es.wikipedia.org/wiki/Star_Trek" 
+                    target="_blank"><button type="button" class="btn btn-outline-primary">Quieres saber mas</button></a>
+                    
+                        </div>
                     
             </div>
         </section>    
@@ -124,7 +130,7 @@
             </tr>
         </table>
         </section> 
-        <form id="contact-form content-md" > 
+        <form id="contact-form"  class="was-validated" action=""> 
             <h2 class="title-section">Contactanos  :)</h2>
             <div class="form-group">
                 <label for="name" id="name-label">Nombre<input type="name" id="name" class="form-control" placeholder="Ingrése su nombre"required/></label>
@@ -133,11 +139,10 @@
                 <label for="surname" id="surname-label">Apellido<input type="name" id="surname"  class="form-control" placeholder="Ingrése su apellido"required/></label>
             </div>
             <div class="form-group">
-            <label form="email" id="emai-labell">Email<input type="email" id="email"  class="form-control" placeholder="Ingrese su direccion de correo electrónico"required/></label>
+            <label form="email" id="email-label">Email<input type="email" id="email"  class="form-control" placeholder="Ingrese su direccion de correo electrónico"required/></label>
             </div>
             <div class="form-group">
                 <textarea type="text" id="comments" name="comment" placeholder="Escriba su mensaje aqui."></textarea>
-                
                 <button type="button" id="submit" class="btn btn-outline-success">Enviar</button>
             </div>
         </form>   
@@ -146,6 +151,9 @@
     <footer id="footer">
         <p id="text-footer">  Gimena Fernandez ©2020 </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
 </body>
 </html>
