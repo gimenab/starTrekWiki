@@ -23,7 +23,8 @@ header{
     background-image: url("http://tng.trekcore.com/hd/albums/1x22/symbiosis_hd_145.jpg" );
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;  
+    background-position: center;
+   /* opacity: 0.9; /*next*/
   }
   #img-header{
     width: 45%;
@@ -323,28 +324,58 @@ table {
     margin: 2%;
   }
   @media (max-width: 575.98px) { }
-
-  /* Small devices (landscape phones, less than 768px)*/
+/* 
+  /* Small devices (landscape phones, less than 768px)
   @media (max-width: 767.98px) {  }
   
-  /* Medium devices (tablets, less than 992px)*/
+  /* Medium devices (tablets, less than 992px)
   @media (max-width: 991.98px) { }
   
-  /*Large devices (desktops, less than 1200px)*/
+  /*Large devices (desktops, less than 1200px)
   @media (max-width: 1199.98px) { }
 
 
   /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { ... }
-
+@media (max-width: 575.98px) {
+  #img-header {
+  width: 70%;
+  padding: 8% 0% 5% 0%;
+}
+header {
+  background-image:none;
+} 
+}
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #img-header {
+    width: 70%;
+    padding: 8% 0% 5% 0%;
+}
+}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) { }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  #img-header {
+    width: 60%;
+    padding: 8% 0% 5% 0%;
+}
+.
+.video, .info{
+  width: 100%;
+  height: auto;
+}
+}
+
+
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  #img-header {
+    width: 50%;
+    padding: 8% 0% 5% 0%;
+}
+}
+
 
  /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {  }
