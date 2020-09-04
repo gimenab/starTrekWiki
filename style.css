@@ -12,19 +12,17 @@ body{
     margin: auto;
     padding: 0;
     display: block;
+    font-size: 13px;
 }
 /* ---HEADER---*/
 header{
-    
     width: 100%;
     display: inline-block;
     text-align:center;
-    margin-top: 3rem;
     background-image: url("http://tng.trekcore.com/hd/albums/1x22/symbiosis_hd_145.jpg" );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-   /* opacity: 0.9; /*next*/
   }
   #img-header{
     width: 45%;
@@ -42,85 +40,34 @@ header{
   /* NAVBAR */
 nav {
   position: fixed;
-  display:inline-block;
+  display:block;
   width: 100%;
   top: 0;
   right:0;
   background-color:#323a42;
+  z-index: 100;
+  color:fff;
 }
 ul{
     list-style-type: none;
     float: right;
     color:#fff;
 }
-#ussenterprise{
-  width: 100px;
-  float:left;
-  padding: 1%;
-}
-#menu{
-  display: inline-flex;
-  list-style-type: none;
-  text-decoration-style: none;  
-  color: #fff; 
-  background-color: transparent;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-size: 14px;
-}
-#menu li{
-  padding-right: 2.5rem;
-  float: right;
-  color: #fff; 
-  background-color: transparent;
-}
-#menu a{
-  text-decoration:none;
-  color: #fff; 
-  background-color: transparent;    
-  font-size: 14px;
-}
-#menu{
-    display: inline-flex;
-    list-style-type: none;
-    text-decoration-style: none;  
-    color: #fff; 
-    background-color: transparent;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-#menu li{
-    padding-right: 1rem;
-    float: right;
-    color: #fff; 
-    background-color: transparent;
-}
-#menu a{
-    text-decoration:none;
-    color: #fff; 
-    background-color: transparent;    
-    font-size: 14px;
-}
 /* --- CONTENT ---*/
+#menu a{
+  color:#fff;
+}
 .container{
   width: 80%;
   height: auto;
   margin: auto;
 }
-figcaption{
-  display: block;
-  font-size:12px;
-  color:#666;
-  padding: 0.5% 0% 0% 1%;
-  font-style:italic;
-}
+
 #main-info{
   width: 100%;
   padding: 3%;
   color:#fff;
   margin-top:2;
-  
-
 }
   .items-list{
     font-size: 18px;
@@ -132,12 +79,6 @@ figcaption{
   }
   .items-list ul{
     margin:3%;
-  }
-  .items-list a{
-    text-decoration:none;
-    width: 50%;
-    display:inline-flex;
-    
   }
   .items-list img{
     width: 5%;
@@ -163,13 +104,10 @@ h1{
     background-color:transparent;
     padding-top: 2rem;   
 }
-  .title-section{
-    font-size: 2rem;
-    color: #3e7dc0;
-    font-weight: bold;
-    font-family: 'Rambla', sans-serif;
-    margin-top:1%;
-    width: 100%;
+ h2 {
+  font-size: 2rem;
+  color: #222 !important;
+  font-weight: bolder;
 }
 h3{
   color: #fff;
@@ -182,21 +120,19 @@ h3{
   display: inline-block;
   width: 100%;
 }
-
+.section{
+  margin-bottom: 1rem;
+}
 #first-season{
-    display: block;
     width: 100%;
     height: auto;
 }
 .see-more {
   width: 100%;
   display: block;
-  margin: 1% auto 1% auto;
-  
-  
+  margin: 3% auto 5% auto;
+
 }
-
-
 .description{
   width: 50%;
   height: auto;
@@ -216,12 +152,10 @@ li{
   border-radius: 5px;
   border-style:solid;
   border-width:2px;  
-    font-family: 'Rambla', sans-serif;
   border-color:#3e7dc0;
   list-style-type: none;
   float: right;
 }
-
 .items-list
 li{
   text-align: left;
@@ -233,30 +167,25 @@ li{
   border-radius: 5px;
 border-style: solid;
 border-width: 2px;
-  
 }
 .items-list li:hover{
   font-weight: bolder;
   color: #3e7dc0;
 font-style: bolder;
-
 }
-form{
-  width: 50%;
-  height: auto;
+#characters-img-m{
+  width:100%;
 }
 
-.more-info {
-  text-align: center;
-  padding: 2%;
- text-decoration: none;
- width: 100%;
-}
-
-.more-info button{
-  width: 80%;
-}
 /* FORM */
+#contact-form{
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  padding: 3%;
+  color:#fff;
+  margin-bottom: 2%;
+}
 .form-group{
   width: 100%;
   height: auto;
@@ -265,13 +194,7 @@ form{
 .form-control{
   font-size: 12px
 }
-#contact-form{
-  width: 50%;
-  font-size: 14px;
-  padding: 3%;
-  color:#fff;
-  margin-bottom: 2%;
-}
+
 
 label, textarea, #submit{
   display: block;
@@ -288,10 +211,6 @@ textarea{
 #email, #surname, #name{
   font-size: 12px;
 }
-/*-- TABLE--*/
-/* #characters{
-  display: none;
-} */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -309,8 +228,6 @@ table {
   }
   td{
     font-size: 14px;
-    /* font-weight: bolder; */
-    
   }
   /* FOOTER */
   #footer{
@@ -324,7 +241,6 @@ table {
     text-align: center;
     padding: 1%;
   }
-
   /* PERSONAJES PAGE */
   #container-characters{
     width: 90%;
@@ -338,7 +254,11 @@ table {
     margin: 2%;
   }
 
-  @media (max-width: 575.98px) { }
+  @media (min-width: 575.98px) { 
+    #characters-mobile{
+      display: none;
+    }
+  }
 /* 
   /* Small devices (landscape phones, less than 768px)
   @media (max-width: 767.98px) {  }
@@ -358,25 +278,30 @@ table {
 }
 header {
   background-image:none;
+  background-color:#222;
 }
 table{
   display: none;
 }
-
-
 article, .info, .video , iframe{
   width: 100%;
   display: block;
 } 
 .see-more{
   text-align:center;
-  
 }
 .see-more button{
   width: 70%;
   padding: 2% 0 2% 0;
   margin: 2% 0 2% 0;
 }
+h2{
+  text-align: center ;
+
+}
+ .items-list a {
+  width: 100%;
+} 
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -386,21 +311,25 @@ article, .info, .video , iframe{
 }
 
 }
-
+@media (min-width: 576px){
+  #
+}
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
   #img-header {
     width: 60%;
     padding: 8% 0% 5% 0%;
 }
-
 .video, .info{
   width: 100%;
   height: auto;
 }
 }
-
-
+@media(min-width:768px){
+  #contact-form{
+    width: 50%;
+  }
+}
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   #img-header {
@@ -408,7 +337,5 @@ article, .info, .video , iframe{
     padding: 8% 0% 5% 0%;
 }
 }
-
-
- /*Extra large devices (large desktops, 1200px and up)*/
+/*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {  }

@@ -9,20 +9,20 @@
     <title>Star Trek: The Next Generation</title>
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img src="img/logo-uss.png" id="ussenterprise" alt="imagen de la nave"></a>
-        <ul id="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="personajes.html">Personajes</a></li>
-            <li><a href="produccion.html">Producción</a></li>
+    <nav class="navbar navbar-expand-sm">
+        <!-- <a href="index.html"><img src="img/logo-uss.png" id="ussenterprise" alt="imagen de la nave"></a> -->
+        <ul id="menu" class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
+            <li class="nav-item"><a class="nav-link" href="produccion.html">Producción</a></li>
         </ul>
     </nav>
     <header>
         <img  id="img-header" src="./img/Star_Trek_logo.png">
     </header>
-    <div class="container mt-4">
-        <section id="main-info"> 
-        <h2 class="title-section">"The Next Generation"</h2>
+    <div class="container mt-6">
+        <section id="main-info" class="container mt-6"> 
+        <h2>The Next Generation</h2>
         <p>Este sitio reune un información de la saga "Star Trek : The Next Generation ". Encontrarás datos sobre la serie, detalles de  los personajes y curiosidades 
             una de las series de ciencia ficción mas querida de la historia del siglo XX.<br/>
             En esta página encontrarás información sobre los siguientes tópicos:</p>
@@ -33,8 +33,9 @@
             </section>
             
         
-        <h2 class="title-section">Original y remasterizada</h2>
-        <section id="first-season" class="content">
+       
+        <section id="first-season" class="container mt-6">
+            <h2>Original y remasterizada</h2>
             <article class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ph0eXOV1D7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <a  class="see-more" href="https://www.youtube.com/channel/UCh5JE2ug05KUdkqqRxe-aJw" target="_blank"><button type="button" class="btn btn-outline-primary">Ver mas videos</button></a>
@@ -48,8 +49,12 @@
                     <a class="see-more" href="https://es.wikipedia.org/wiki/Star_Trek" target="_blank"><button type="button" class="btn btn-outline-primary">Quieres saber mas</button></a>
             </article>
         </section>    
-        <h2 class="title-section">Personajes principales</h2>
-        <section id="characters">
+        <h2 >Personajes principales</h2>
+        <section id="characters-mobile" class="container mt-6">
+            <img id="characters-img-m" src="http://tng.trekcore.com/hd/albums/1x08/justice_hd_203.jpg"alt="Tasha charlando con habitantes del mundo paradisíaco de Edo">
+                <a class="see-more" href="./personajes.html"><button type="button" class="btn btn-outline-primary">Quieres saber mas</button></a>
+            </section>
+        <section id="characters" class="container mt-6">
             <table>
                 <tr>
                     <th>Personaje</th>
@@ -112,9 +117,10 @@
                 <td>Alferez, timonel</td>
             </tr>
         </table>
-        </section> 
+        </section class="container mt-6"> 
         <form id="contact-form"  class="was-validated" action=""> 
-            <h2 class="title-section">Contactanos  :)</h2>
+            <h2>Contactanos  :)</h2>
+            <p>Dejanos tu consulta, opinión y contanos que te gustaría saber de la serie</p>
             <div class="form-group">
                 <label for="name" id="name-label">Nombre<input type="name" id="name" class="form-control" placeholder="Ingrése su nombre"required/></label>
             </div>
