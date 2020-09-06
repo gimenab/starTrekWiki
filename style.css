@@ -14,7 +14,7 @@ body{
     display: block;
     font-size: 13px;
 }
-/* ---HEADER---*/
+/* ////////// header /////////// */
 header{
     width: 100%;
     display: inline-block;
@@ -53,10 +53,15 @@ ul{
     float: right;
     color:#fff;
 }
+
 /* --- CONTENT ---*/
+
 #menu a{
   color:#fff;
 }
+
+/* ////////// content /////////// */
+
 .container{
   width: 80%;
   height: auto;
@@ -112,7 +117,6 @@ h1{
 h3{
   color: #fff;
   background-color:transparent;
-  font-style: italic;
   display: inline;
 }
 
@@ -166,25 +170,41 @@ li{
   border-color: transparent;
   border-radius: 5px;
 border-style: solid;
-border-width: 2px;
+border-width: 2px; 
 }
 .items-list li:hover{
   font-weight: bolder;
   color: #3e7dc0;
 font-style: bolder;
 }
+
 #characters-img-m{
   width:100%;
 }
 
 /* FORM */
-#contact-form{
+/*#contact-form{
   width: 100%;
   height: auto;
   font-size: 14px;
   padding: 3%;
   color:#fff;
   margin-bottom: 2%;
+}*/
+.more-info {
+  text-align: center;
+  padding: 2%;
+ text-decoration: none;
+ width: 100%;
+}
+.more-info button{
+  width: 80%;
+}
+/* ////////// form ////////// */
+form{
+  width: 50%;
+  height: auto;
+
 }
 .form-group{
   width: 100%;
@@ -211,6 +231,9 @@ textarea{
 #email, #surname, #name{
   font-size: 12px;
 }
+
+/* //////////  table ////////// */
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -229,7 +252,7 @@ table {
   td{
     font-size: 14px;
   }
-  /* FOOTER */
+  /* ////////// footer //////////  */
   #footer{
     background-color: #323a42;
     width: 100%;
@@ -241,36 +264,102 @@ table {
     text-align: center;
     padding: 1%;
   }
-  /* PERSONAJES PAGE */
+
+  /*  ////////// personajes //////////  */
   #container-characters{
     width: 90%;
     padding: 3%;
     display: block;
     background-color:#f2f2f2;
-    
   }
   .row{
-   
     margin: 2%;
   }
+
 
   @media (min-width: 575.98px) { 
     #characters-mobile{
       display: none;
     }
   }
-/* 
-  /* Small devices (landscape phones, less than 768px)
-  @media (max-width: 767.98px) {  }
-  
-  /* Medium devices (tablets, less than 992px)
-  @media (max-width: 991.98px) { }
-  
-  /*Large devices (desktops, less than 1200px)
-  @media (max-width: 1199.98px) { }
+
+  #id-button{
+    width: 50%;
+    padding: 2%;
+    margin: 1rem; 
+    display :inline-block;
+    text-align:center;
+  }
+  #respuesta{
+    width: 100%;
+    margin: 1rem; 
+  }
+  .card-text{
+    font-size: 13px;
+  }
+  /* ////////// game ////////// */
+  #input-name {
+    font-size:1.5rem;
+    color:#3e7dc0;
+    font-weight: bolder;
+  }
+  #nombre, #input-name{
+    margin-right: 1rem;
+  }
+  .fas, .fa-gamepad{
+    font-size: 3rem;
+    display: inline;
+    vertical-align: sub;
+    color:#222;
+  }
+  #solution{
+    width: 100%;
+    padding:3%;
+    background-color: #3e7dc0;
+    color:#fff;
+    font-size: 1rem;
+    text-align:center;
+  }
+  #instructions, #rules{
+    width: 100;
+    padding-bottom: 1rem;
+  }
+  #instructions{
+    text-align: center;
+  }
+  #gotoplay-button{
+    background-color: #f2744d;
+    border-color: #d49782;
+}
+  #gotoplay-button:hover{
+    background-color:#d49782;
 
 
-  /* Extra small devices (portrait phones, less than 576px)*/
+  }
+  #pista{
+    color:#f2744d;
+  }
+  #pista h5{
+   font-weight: bolder;
+  }
+  #stars{
+    display:block;
+    
+  }
+  .far{
+    color:#3e7dc0;
+    padding-right: 1rem;
+  }
+  #img-slider{
+    width: 100%;
+    height: auto;
+  }
+  /* ////////// responsive ////////// */
+  @media (min-width: 575.98px) {
+    #img-slider{
+      display:none;
+    }
+   }
 @media (max-width: 575.98px) {
   #img-header {
   width: 70%;
@@ -278,7 +367,6 @@ table {
 }
 header {
   background-image:none;
-  background-color:#222;
 }
 table{
   display: none;
@@ -302,8 +390,18 @@ h2{
  .items-list a {
   width: 100%;
 } 
+#play-button{
+  padding:1%  2% ;
+  width: 100%;
+  
+} 
+form{
+  width: 100%;
 }
-/* Small devices (landscape phones, 576px and up)*/
+#gotoplay-table{
+  display: none;
+}
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
   #img-header {
     width: 70%;
@@ -311,10 +409,13 @@ h2{
 }
 
 }
-@media (min-width: 576px){
-  #
+@media (min-width :768px){
+  #instructions{
+    display: inline-flex;
+  }
+
 }
-/* Medium devices (tablets, 768px and up)*/
+
 @media (min-width: 768px) and (max-width: 991.98px) { 
   #img-header {
     width: 60%;
@@ -325,17 +426,18 @@ h2{
   height: auto;
 }
 }
+
 @media(min-width:768px){
   #contact-form{
     width: 50%;
   }
 }
-/* Large devices (desktops, 992px and up)*/
+
+
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   #img-header {
     width: 50%;
     padding: 8% 0% 5% 0%;
 }
 }
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
+

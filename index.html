@@ -6,23 +6,28 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Quicksand:wght@500&family=Rambla:ital,wght@1,700&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <title>Star Trek: The Next Generation</title>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-sm">
         <!-- <a href="index.html"><img src="img/logo-uss.png" id="ussenterprise" alt="imagen de la nave"></a> -->
         <ul id="menu" class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
             <li class="nav-item"><a class="nav-link" href="produccion.html">Producción</a></li>
-        </ul>
+
     </nav>
     <header>
-        <img  id="img-header" src="./img/Star_Trek_logo.png">
+        <img   id="img-header" src="./img/Star_Trek_logo.png">
     </header>
-    <div class="container mt-6">
-        <section id="main-info" class="container mt-6"> 
-        <h2>The Next Generation</h2>
+
+    <img id="img-slider" class="img-responsive" src="http://tng.trekcore.com/hd/albums/1x22/symbiosis_hd_145.jpg" alt="Uss Enterprice">
+    <div class="container mt-4">
+        <section  class="content-md" id="main-info"> 
+        <h2 class="title-section">"The Next Generation"</h2>
+
         <p>Este sitio reune un información de la saga "Star Trek : The Next Generation ". Encontrarás datos sobre la serie, detalles de  los personajes y curiosidades 
             una de las series de ciencia ficción mas querida de la historia del siglo XX.<br/>
             En esta página encontrarás información sobre los siguientes tópicos:</p>
@@ -49,12 +54,18 @@
                     <a class="see-more" href="https://es.wikipedia.org/wiki/Star_Trek" target="_blank"><button type="button" class="btn btn-outline-primary">Quieres saber mas</button></a>
             </article>
         </section>    
-        <h2 >Personajes principales</h2>
-        <section id="characters-mobile" class="container mt-6">
-            <img id="characters-img-m" src="http://tng.trekcore.com/hd/albums/1x08/justice_hd_203.jpg"alt="Tasha charlando con habitantes del mundo paradisíaco de Edo">
-                <a class="see-more" href="./personajes.html"><button type="button" class="btn btn-outline-primary">Quieres saber mas</button></a>
+
+        <h2 class="title-section">Personajes principales</h2>
+        <section id="characters-mobile" class="container mt-2">
+            <img id="characters-img-m" src="http://tng.trekcore.com/hd/albums/1x21/thearsenaloffreedom_hd_150.jpg"alt="Personajes en planeta desconocido">
+                <a class="see-more" href="./personajes.html"><button type="button" class="btn btn-outline-primary">Ver personajes</button></a>
+                <a class="see-more" href="./personajes.html"><button type="button" class="btn btn-primary" id="gotoplay-button">Jugar</button></a>
             </section>
-        <section id="characters" class="container mt-6">
+        <section id="characters" class="container mt-2">
+        
+        <section id="characters">
+            <a class="see-more" id="gotoplay-table" href="./personajes.html"><button type="button" class="btn btn-primary" id="gotoplay-button">Jugar</button></a>
+
             <table>
                 <tr>
                     <th>Personaje</th>
