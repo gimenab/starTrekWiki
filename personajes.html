@@ -6,32 +6,88 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Quicksand:wght@500&family=Rambla:ital,wght@1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     
 
     <title>Star Trek: The Next Generation</title>
 </head>
 <body>
-
-
         <nav>
             <a href="index.html"><img src="img/logo-uss.png" id="ussenterprise" alt="imagen de la nave"></a>
             <ul id="menu">
                 <li ><a href="index.html">Home</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="play.html">Juega</a></li>
                 <li><a href="produccion.html">Producción</a></li>
                 
             </ul>
-            
         </nav>
         <header>
             <img  id="img-header" src="./img/Star_Trek_logo.png"> 
         </header>
-
-
-               
 <div class="container" id="container-characters">
-    <h2 class="title-section">Personajes Principales</h2> 
+    <h2 class="title-section">Personajes Principales:</h2><br>
+    <h3>¿Cuánto sabes de la serie?</h3>
+
+    <section id="rules">
+    <p>Sigue las intrucciones</p>
+    <ul>
+        <li>El objetivo del juego es adivinar el personaje de la adivinanza</li><br>
+        <li>Lee la descripción de los personajes a continuación, allí encontrás pistas :)</li><br>
+        <li>Ingresa tu nombre para jugar</li><br>
+        <li><h5>Una pista para comenzar </h5>
+            Cuando la tripulación del Enterprice se vió afectada por un virus muy particular
+            (las personas se volvían más pasionales e irreverentes) Un tripulante se apoderó del control del Puente
+        </li><br>
+    </ul>   
+</section>
+    <section id="instructions">   
+    <p><span id="input-name">¿Cuál es tu nombre?</span> 
+        <input type="text" id="nombre" placeholder="ingrese un nombre para jugar"></p>
+    <button id="play-button" class="btn btn-outline-primary btn-lg" onclick="jugar_ahora()">
+        <span id="icon-game"><i class="fas fa-gamepad"></i></span>
+    </button>
+    </section>
+    
+    <p id="solution"></p>
+    <script>
+        function jugar_ahora() {
+            var cant_intentos = 4;
+            var acierto = false;
+            var answer;
+            var correctAnswer = "Wesley";
+            var nombre=document.getElementById("nombre").value;
+            if(nombre=="")
+            {
+                alert("Por favor, ingrese su  nombre para JUGAR");
+            }
+            else
+            {
+                while(cant_intentos>0 && acierto!=true)
+                {
+                    cant_intentos--;
+                    answer = prompt("Ingrese respuesta");
+                    if (answer===correctAnswer )
+                    {
+                        alert("Adivinaste Felicitaciones !!!");
+                        acierto = true;	
+                    }
+                    else if ( cant_intentos==3 && acierto!=true)
+                    {
+                        alert("PISTA 1 : Se hace amigo de Traveler, un viajero en el tiempo");
+                    }
+                    else if (cant_intentos==2 && acierto!=true)
+                    {
+                        alert("PISTA 2 : Es llevado a juicio y casi ejecutado  por dañar un jardin de flores");
+                    }
+                    else if(cant_intentos==1 && acierto!=true)
+                    {
+                        alert("LE QUEDA " + cant_intentos + " INTENTO !!! PISTA 3 : No es un adroide");
+                    }
+                }
+                document.getElementById("solution").innerHTML="El personaje es : <h3>" + correctAnswer + "</h3>";
+            }
+        }
+    </script>
   <div class="row">
     <div class="col-md">
         <div class="card">

@@ -54,9 +54,9 @@ ul{
     color:#fff;
 }
 #ussenterprise{
-  width: 100px;
+  width: 50%;
   float:left;
-  padding: 1%;
+  padding: 1% 5% ;
 }
 #menu{
   display: inline-flex;
@@ -335,21 +335,45 @@ table {
     width: 100%;
     margin: 1rem; 
   }
-
-
-  @media (max-width: 575.98px) { }
-/* 
-  /* Small devices (landscape phones, less than 768px)
-  @media (max-width: 767.98px) {  }
+  /* game*/
   
-  /* Medium devices (tablets, less than 992px)
-  @media (max-width: 991.98px) { }
-  
-  /*Large devices (desktops, less than 1200px)
-  @media (max-width: 1199.98px) { }
+   /* #play-button{
+    padding:1%  2% ;
+    
+  }  */
+  #input-name {
+    font-size:1.5rem;
+    color:#3e7dc0;
+    font-weight: bolder;
+   
+  }
+  #nombre, #input-name{
+    margin-right: 1rem;
 
+  }
+  .fas, .fa-gamepad{
+    font-size: 3rem;
+    display: inline;
+    vertical-align: sub;
+    color:#222;
+  }
+  #solution{
+    width: 100%;
+    padding:2%;
+    background-color: #3e7dc0;
+    color:#fff;
+    font-size: 1rem;
+    border-style: 1px solid rgb(255, 157, 0);
+  }
+  #instructions, #rules{
+    width: 100;
+  }
 
-  /* Extra small devices (portrait phones, less than 576px)*/
+  @media (min-width: 575.98px) {
+    #instructions{
+      display: inline-flex;
+    }
+   }
 @media (max-width: 575.98px) {
   #img-header {
   width: 70%;
