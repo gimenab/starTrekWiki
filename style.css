@@ -13,7 +13,7 @@ body{
     padding: 0;
     display: block;
 }
-/* ---HEADER---*/
+/* ////////// header /////////// */
 header{
     
     width: 100%;
@@ -24,7 +24,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-   /* opacity: 0.9; /*next*/
   }
   #img-header{
     width: 45%;
@@ -101,7 +100,7 @@ ul{
     background-color: transparent;    
     font-size: 14px;
 }
-/* --- CONTENT ---*/
+/* ////////// content /////////// */
 .container{
   width: 80%;
   height: auto;
@@ -172,7 +171,6 @@ h1{
 h3{
   color: #fff;
   background-color:transparent;
-  font-style: italic;
   display: inline;
 }
 
@@ -210,7 +208,6 @@ li{
   list-style-type: none;
   float: right;
 }
-
 .items-list
 li{
   text-align: left;
@@ -221,31 +218,27 @@ li{
   border-color: transparent;
   border-radius: 5px;
 border-style: solid;
-border-width: 2px;
-  
+border-width: 2px; 
 }
 .items-list li:hover{
   font-weight: bolder;
   color: #3e7dc0;
 font-style: bolder;
-
 }
-form{
-  width: 50%;
-  height: auto;
-}
-
 .more-info {
   text-align: center;
   padding: 2%;
  text-decoration: none;
  width: 100%;
 }
-
 .more-info button{
   width: 80%;
 }
-/* FORM */
+/* ////////// form ////////// */
+form{
+  width: 50%;
+  height: auto;
+}
 .form-group{
   width: 100%;
   height: auto;
@@ -277,7 +270,7 @@ textarea{
 #email, #surname, #name{
   font-size: 12px;
 }
-/*-- TABLE--*/
+/* //////////  table ////////// */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -295,10 +288,8 @@ table {
   }
   td{
     font-size: 14px;
-    /* font-weight: bolder; */
-    
   }
-  /* FOOTER */
+  /* ////////// footer //////////  */
   #footer{
     background-color: #323a42;
     width: 100%;
@@ -310,20 +301,16 @@ table {
     text-align: center;
     padding: 1%;
   }
-
-  /* PERSONAJES PAGE */
+  /*  ////////// personajes //////////  */
   #container-characters{
     width: 90%;
     padding: 3%;
     display: block;
     background-color:#f2f2f2;
-    
   }
   .row{
-   
     margin: 2%;
   }
-
   #id-button{
     width: 50%;
     padding: 2%;
@@ -335,21 +322,17 @@ table {
     width: 100%;
     margin: 1rem; 
   }
-  /* game*/
-  
-   /* #play-button{
-    padding:1%  2% ;
-    
-  }  */
+  .card-text{
+    font-size: 13px;
+  }
+  /* ////////// game ////////// */
   #input-name {
     font-size:1.5rem;
     color:#3e7dc0;
     font-weight: bolder;
-   
   }
   #nombre, #input-name{
     margin-right: 1rem;
-
   }
   .fas, .fa-gamepad{
     font-size: 3rem;
@@ -359,61 +342,91 @@ table {
   }
   #solution{
     width: 100%;
-    padding:2%;
+    padding:3%;
     background-color: #3e7dc0;
     color:#fff;
     font-size: 1rem;
-    border-style: 1px solid rgb(255, 157, 0);
+    text-align:center;
   }
   #instructions, #rules{
     width: 100;
+    padding-bottom: 1rem;
   }
+  #instructions{
+    text-align: center;
+  }
+  #gotoplay-button{
+    background-color: #f2744d;
+    border-color: #d49782;
+}
+  #gotoplay-button:hover{
+    background-color:#d49782;
 
+  }
+  #pista{
+    color:#f2744d;
+  }
+  #pista h5{
+   font-weight: bolder;
+  }
+  #stars{
+    display:block;
+    
+  }
+  .far{
+    color:#3e7dc0;
+    padding-right: 1rem;
+  }
+  #img-slider{
+    width: 100%;
+    height: auto;
+  }
+  /* ////////// responsive ////////// */
   @media (min-width: 575.98px) {
-    #instructions{
-      display: inline-flex;
+    #img-slider{
+      display:none;
     }
    }
 @media (max-width: 575.98px) {
   #img-header {
   width: 70%;
   padding: 8% 0% 5% 0%;
+  background-color: none;
 }
 header {
   background-image:none;
 } 
+#play-button{
+  padding:1%  2% ;
+  width: 100%;
+  
+} 
 }
-/* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   #img-header {
     width: 70%;
     padding: 8% 0% 5% 0%;
 }
 }
+@media (min-width :768px){
+  #instructions{
+    display: inline-flex;
+  }
 
-/* Medium devices (tablets, 768px and up)*/
+}
 @media (min-width: 768px) and (max-width: 991.98px) { 
   #img-header {
     width: 60%;
     padding: 8% 0% 5% 0%;
 }
-
 .video, .info{
   width: 100%;
   height: auto;
 }
 }
-
-
-
-/* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   #img-header {
     width: 50%;
     padding: 8% 0% 5% 0%;
 }
 }
-
-
- /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }

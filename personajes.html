@@ -13,7 +13,6 @@
 </head>
 <body>
         <nav>
-            <a href="index.html"><img src="img/logo-uss.png" id="ussenterprise" alt="imagen de la nave"></a>
             <ul id="menu">
                 <li ><a href="index.html">Home</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
@@ -24,19 +23,21 @@
         <header>
             <img  id="img-header" src="./img/Star_Trek_logo.png"> 
         </header>
+    <img id="img-slider" src="http://tng.trekcore.com/hd/albums/1x22/symbiosis_hd_145.jpg" alt="Uss Enterprice">
+
 <div class="container" id="container-characters">
-    <h2 class="title-section">Personajes Principales:</h2><br>
+    <h2 class="title-section">Personajes Principales</h2><br>
     <h3>¿Cuánto sabes de la serie?</h3>
 
     <section id="rules">
     <p>Sigue las intrucciones</p>
     <ul>
-        <li>El objetivo del juego es adivinar el personaje de la adivinanza</li><br>
+        <li>El objetivo del juego es adivinar es descubrir quien es el personaje, escribiendo su nombre de pila en el campo de texto</li><br>
         <li>Lee la descripción de los personajes a continuación, allí encontrás pistas :)</li><br>
-        <li>Ingresa tu nombre para jugar</li><br>
-        <li><h5>Una pista para comenzar </h5>
-            Cuando la tripulación del Enterprice se vió afectada por un virus muy particular
-            (las personas se volvían más pasionales e irreverentes) Un tripulante se apoderó del control del Puente
+        <li id="pista"><h5>Un bonus para comenzar</h5>
+            <span id="stars"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+            En la primer temprada  cuando la Enterprise se infecta con un extraño virus embriagador ;
+            El personaje secreto de nuestro juego se apoderó del control del Puente.
         </li><br>
     </ul>   
 </section>
@@ -73,7 +74,7 @@
                     }
                     else if ( cant_intentos==3 && acierto!=true)
                     {
-                        alert("PISTA 1 : Se hace amigo de Traveler, un viajero en el tiempo");
+                        alert("PISTA 1 : Se hace amigo de Traveler, un viajero en el tiempo quién descubre su alto coeficiente intelectual");
                     }
                     else if (cant_intentos==2 && acierto!=true)
                     {
@@ -94,8 +95,9 @@
             <img src="http://tng.trekcore.com/hd/albums/1x19/comingofage_hd_211.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Jean-Luc Picard</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Capitán y lider confía en su equipo para sortear las dificultades a lo largo de los capítulos. 
+                    Sabe cuando ceder el mando si es necesario</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
@@ -104,8 +106,9 @@
             <img src="http://tng.trekcore.com/hd/albums/1x05/thelastoutpost_hd_015.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">William Ricker</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Number One del Enterprise , intrépido y valiente es el que mas sale de expediciones fuera de la nave. 
+                    Su sueño convertirse en capitán. En la primera temporada es devorado por una entidad de un planeta y es enviado a negociar en diferentes circunstancias<i class="fas fa-do-not-enter    "></i></p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
@@ -114,8 +117,9 @@
             <img src="http://tng.trekcore.com/hd/albums/1x03/nakednow_hd_072.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Beverly Crusher</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">La médica de la nave, tiene a cargo la seguridad de la salud de todos los tripulantes de la nave, 
+                    amante de la investigacion. En la primer temporada descubre dos vacunas que salvarán la vida de todos. Tiene una accidente al caér en un pozo en un planeta gobernado por una computadora antigua y debe guiar al Capitán Picard para que la ayude a mantenerse con vida. Madre de Wesley.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
@@ -126,8 +130,11 @@
             <img src="http://tng.trekcore.com/hd/albums/1x04/codeofhonor_hd_061.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Natasha "Tasha" Yar</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Jefa de Seguridad, valiente y segura de si misma y sus capacidades, su belleza deslumbra a varias a lo largo de la primer temporada. 
+                    Es amante de los deportes del combate.De especie romulana, proviene de un planeta colapsado.Se pueden ver imágenes de esto en 
+                    capitulo "Where No One Has Gone Before",
+                    ,cuando Traveler sin querer los lleva auna especie de nueva dimensión donde todos tienen visiones de su pásado</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
@@ -136,8 +143,8 @@
             <img src="http://tng.trekcore.com/hd/albums/1x06/wherenoone_hd_127.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Worf</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Es de la esecie de los Klingon, pero fúe criado con humanos, amante de los conflicos y la guerra debe reprimir sus impulsos en pos del seguimiento de las reglas Intergalacticas.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
@@ -146,8 +153,9 @@
             <img src="http://tng.trekcore.com/hd/albums/1x15/11001001_hd_258.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Geordi La Forge</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">El Ingeniero del Enterprise. Ciego de nacimiento , 
+                    juntos se vana a la Holosección a tener aventuras investigando casos policiales.</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
@@ -158,8 +166,10 @@
             <img src="http://tng.trekcore.com/hd/albums/1x09/thebattle_hd_060.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Data</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">El único androide a bordo del Enterprise, puede aprender todo muy rapidamente y 
+                    teorizar cuando la situación lo amerita. Su mayor deseo es ser cada vez mas humano.Lo que lo lleva a la Holosección a tomar clases
+                con un comediante del siglo XX</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
@@ -168,8 +178,11 @@
             <img src="http://tng.trekcore.com/hd/albums/1x14/angelone_hd_017.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Deanna Troi</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">De especie Betazoide es la consejera de la Nave, sus capacidades son extremadamente ultiles en la reslolusión
+                    de conflictos. Durante la primera temprada conocemos a su familia , sufre eun accidente junto a otro tripulante y caen en un planeta olvidado
+                    donde se enfrentan a una entidad oscura que devora a Ricker y termina con la vida de Tasha.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
@@ -178,8 +191,10 @@
             <img src="http://tng.trekcore.com/hd/albums/1x19/comingofage_hd_412.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Wesley Crusher</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Adolesecente del Enterprise, sus actividades rondan ene estudiar y hacer todo lo posible para tener oportunidad de acceder al 
+                    Puente y tripular el Enterprise. Es un joven muy curioso y amante de la Ciencia; en la primer temporada rinde un exámen para ingresar a la Academia y es vencido
+                    por Mordock. Baja al planeta Edo y conoce a jovenes de su edad y tiene un incidente menor, que pondrá en riesgo su vida.
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
     </div>
